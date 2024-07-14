@@ -5,6 +5,9 @@ $(function () {
   onepCloseNav(navWidth);
   hideNav();
   mainData();
+
+  $("body").css("overflow", "auto");
+  $("aside").css("z-index", "9");
 });
 
 // add event for nav aside links
@@ -65,6 +68,15 @@ async function fetchData(
   ingredients,
   ingredientName
 ) {
+  // show loading for getting data
+  $(".loading").css("display", "grid");
+  $(".loader").css("display", "inline-block");
+
+  // hide loading for showing data
+  $(".loader").fadeOut(500, function () {
+    $(".loading").fadeOut(500);
+  });
+
   const baseUrl = "https://www.themealdb.com/api/json/v1/1/";
   let endPoint = "";
   if (mealName) {
@@ -96,6 +108,7 @@ async function mainData() {
   const uiMeals = uiDataMeals(data);
   $("main .meals").html(uiMeals);
   clickMealToShowDetails("main", "#mealDetails");
+  $(".loading").fadeOut(1000);
 }
 
 function toggleTWoSections(showSectionName, hideSectionName) {
@@ -145,6 +158,7 @@ async function showIngredientsMeals(ingredientName) {
   );
   const uiDataMeal = uiDataMeals(meals);
   $("#Ingredients .row").html(uiDataMeal);
+  $(".loading").fadeOut(1000);
   clickMealToShowDetails("#Ingredients", "#mealDetails");
 }
 

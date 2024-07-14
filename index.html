@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
     <title>Yummy</title>
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
@@ -11,7 +11,11 @@
   </head>
 
   <body>
-    <aside class="min-vh-100 position-fixed z-2 d-flex">
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+
+    <aside class="min-vh-100 position-fixed d-flex">
       <div
         class="menu d-flex justify-content-between flex-column vh-100 overflow-hidden"
       >
@@ -36,7 +40,9 @@
       <div
         class="header d-flex flex-column justify-content-between align-items-center bg-white text-black px-2 py-4"
       >
-        <a class="navLink" href="#mainData"><img src="./logo.png" alt="logo" /></a>
+        <a class="navLink" href="#mainData"
+          ><img src="./logo.png" alt="logo"
+        /></a>
         <i class="fa-solid open-close-icon fa-2x fa-bars"></i>
         <div>
           <i class="fa-solid fa-globe d-block"></i>
@@ -170,7 +176,8 @@
               class="alert alert-danger p-2 mt-2 text-center d-none"
               role="alert"
             >
-            Minimum eight characters, at least one uppercase letter, one lowercase letter and one number
+              Minimum eight characters, at least one uppercase letter, one
+              lowercase letter and one number
             </div>
           </div>
 
@@ -184,10 +191,10 @@
               class="alert alert-danger p-2 mt-2 text-center d-none"
               role="alert"
             >
-            Repassword must ba as password
+              Repassword must ba as password
             </div>
           </div>
-          
+
           <button
             type="button"
             class="btn btn-outline-danger w-auto m-auto mt-4 disabled"
