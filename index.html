@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <aside class="min-vh-100 position-fixed z-2 d-flex">
+      <div
+        class="menu d-flex justify-content-between flex-column vh-100 overflow-hidden"
+      >
+        <div class="links mt-2 overflow-hidden">
+          <ul class="list-unstyled d-flex flex-column gap-3">
+            <li><a class="navLink" href="#Search">Search</a></li>
+            <li><a class="navLink" href="#Categories">Categories</a></li>
+            <li><a class="navLink" href="#Area">Area</a></li>
+            <li><a class="navLink" href="#Ingredients">Ingredients</a></li>
+            <li><a class="navLink" href="#ContactUs">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>Copyright Â© 2019 All Rights<br />Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="header d-flex flex-column justify-content-between align-items-center bg-white text-black px-2 py-4"
+      >
+        <a class="navLink" href="#mainData"><img src="./logo.png" alt="logo" /></a>
+        <i class="fa-solid open-close-icon fa-2x fa-bars"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main id="mainData" class="container py-5">
+      <div class="row meals text-black g-4 bg-transparent"></div>
+    </main>
+
+    <section id="mealDetails" class="container py-5 d-none">
+      <div class="row"></div>
+    </section>
+
+    <section id="Search" class="container d-none">
+      <div class="row py-5 mx-5 px-4">
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="sName form-control bg-transparent text-white mb-2"
+            placeholder="Search By Name"
+          />
+          <div
+            class="alert alert-danger p-2 mt-2 text-center d-none"
+            role="alert"
+          >
+            A simple warning alert—check it out!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="sFirstLetter form-control bg-transparent text-white"
+            placeholder="Search By First Letter"
+            maxlength="1"
+          />
+          <div
+            class="alert alert-danger p-2 mt-2 text-center d-none"
+            role="alert"
+          >
+            A simple warning alert—check it out!
+          </div>
+        </div>
+      </div>
+
+      <div class="row meals text-black g-4 bg-transparen py-5 text-black"></div>
+    </section>
+
+    <section id="Categories" class="container py-5 d-none">
+      <div class="row meals text-black g-4 bg-transparent"></div>
+    </section>
+
+    <section id="Area" class="container py-5 d-none">
+      <div class="row meals g-4"></div>
+    </section>
+
+    <section id="Ingredients" class="container py-5 d-none">
+      <div class="row meals g-5"></div>
+    </section>
+
+    <section id="ContactUs" class="container d-none">
+      <div
+        class="inner d-flex flex-column justify-content-center align-items-start min-vh-100"
+      >
+        <div class="row p-5 m-5 g-3 w-100">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="Name form-control mb-2"
+              placeholder="Enter Your Name"
+            />
+            <div
+              class="alert alert-danger p-2 mt-2 text-center d-none"
+              role="alert"
+            >
+              Special characters and numbers not allowed
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="email"
+              class="Email form-control mb-2"
+              placeholder="Enter Your Email"
+            />
+            <div
+              class="alert alert-danger p-2 mt-2 text-center d-none"
+              role="alert"
+            >
+              Email not valid *exemple@yyy.zzz
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="number"
+              class="Phone form-control mb-2"
+              placeholder="Enter Your Phone"
+            />
+            <div
+              class="alert alert-danger p-2 mt-2 text-center d-none"
+              role="alert"
+            >
+              Enter valid Phone Number
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="number"
+              class="Age form-control mb-2"
+              placeholder="Enter Your Age"
+            />
+            <div
+              class="alert alert-danger p-2 mt-2 text-center d-none"
+              role="alert"
+            >
+              Enter valid age
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="password"
+              class="Password form-control mb-2"
+              placeholder="Enter Your password"
+            />
+            <div
+              class="alert alert-danger p-2 mt-2 text-center d-none"
+              role="alert"
+            >
+            Minimum eight characters, at least one uppercase letter, one lowercase letter and one number
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <input
+              type="password"
+              class="Repassword form-control mb-2"
+              placeholder="Repassword"
+            />
+            <div
+              class="alert alert-danger p-2 mt-2 text-center d-none"
+              role="alert"
+            >
+            Repassword must ba as password
+            </div>
+          </div>
+          
+          <button
+            type="button"
+            class="btn btn-outline-danger w-auto m-auto mt-4 disabled"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

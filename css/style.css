@@ -1,0 +1,46 @@
+/* Start Global Variable */
+:root {
+  --mainColor: #343434;
+  --secondaryColor: #1c1c1c;
+  --thirdColor: #748182;
+  --fourthColor: #f7f7f7;
+}
+body,
+aside {
+  background-color: #0d0d0d !important;
+  color: #f9f6f6 !important;
+  /* overflow: hidden; */
+}
+
+/* End Global Variable */
+.meals .overlay {
+  background-color: #f9f6f6ca;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.meals .data:hover .overlay {
+  top: 0px !important;
+}
+aside img {
+  width: 50px;
+}
+aside .menu {
+  padding: 24px;
+  white-space: nowrap !important;
+}
+aside li a {
+  text-decoration: none;
+  color: #f9f6f6 !important;
+}
+aside i{
+  cursor: pointer;
+}
+#Search input::placeholder {
+  color: rgb(145, 139, 139) !important;
+}
+#Area{
+  color: #f9f6f6 !important;
+}
